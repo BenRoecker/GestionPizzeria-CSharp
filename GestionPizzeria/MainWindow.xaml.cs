@@ -22,7 +22,7 @@ namespace GestionPizzeria
     {
         public MainWindow()
         {
-            
+            InitializeComponent();
         }
     }
 }
