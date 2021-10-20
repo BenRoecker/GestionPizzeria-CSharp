@@ -9,7 +9,8 @@
       Title="VueLivreur">
 
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="400,225,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Text="c'est la vue livreur" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
     </Grid>
 </Page>

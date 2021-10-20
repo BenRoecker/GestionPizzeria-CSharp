@@ -24,7 +24,7 @@ namespace GestionPizzeria
         public MainWindow()
         {
             InitializeComponent();
-            _NavigationFrame.Navigate(new Vue.VueClient());
+            _NavigationFrame.Navigate(new Vue.Start_up());
         }
 
         

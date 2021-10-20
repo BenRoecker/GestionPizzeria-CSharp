@@ -1,4 +1,4 @@
-﻿<Page x:Class="GestionPizzeria.Vue.VueClient"
+﻿<Page x:Class="GestionPizzeria.Vue.Start_up"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,12 +6,13 @@
       xmlns:local="clr-namespace:GestionPizzeria.Vue"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="VueClient">
+      Title="Start_up">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="c'est la vue client" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Text="Bonjour, toi !" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <ProgressBar HorizontalAlignment="Center" Height="10" Margin="0,252,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox HorizontalAlignment="Center" Margin="0,166,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Page Client" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824"/>
+        <Button Content="Page Client" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Client"/>
+        <Button Content="Page Livreur" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Livreur"/>
     </Grid>
 </Page>
