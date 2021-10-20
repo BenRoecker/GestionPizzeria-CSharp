@@ -14,17 +14,13 @@ using System.Windows.Shapes;
 namespace GestionPizzeria.Vue
 {
     /// <summary>
-    /// Logique d'interaction pour VueClient.xaml
+    /// Logique d'interaction pour VueClientOver.xaml
     /// </summary>
-    public partial class VueClient : Page
+    public partial class VueClientOver : Page
     {
-        public VueClient()
+        public VueClientOver()
         {
             InitializeComponent();
-        }
-        private void Button_Click_Client_Over(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("Vue/VueClientOver.xaml", UriKind.Relative));
         }
     }
 }
