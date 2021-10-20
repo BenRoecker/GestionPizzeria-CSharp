@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Bonjour, toi !" TextWrapping="Wrap" VerticalAlignment="Center"/>
-        <ProgressBar HorizontalAlignment="Center" Height="10" Margin="0,252,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,166,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-
+        <DockPanel>
+            <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" />
+        </DockPanel>
     </Grid>
+    
 </Window>
