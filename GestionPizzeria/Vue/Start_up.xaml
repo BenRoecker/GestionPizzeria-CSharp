@@ -9,10 +9,11 @@
       Title="Start_up">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Bonjour, toi !" TextWrapping="Wrap" VerticalAlignment="Center"/>
-        <ProgressBar HorizontalAlignment="Center" Height="10" Margin="0,252,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Center" Text="Bienvenue à la Pizzeria !/nVous pouvez vous connecter en tant que client ou livreur ou vous inscrire" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Center" Margin="0,166,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Page Client" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Client"/>
         <Button Content="Page Livreur" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Livreur"/>
+        <Button Content="Inscription Client" HorizontalAlignment="Center" Margin="0,460,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Inscription"/>
+        <Button Content="Admin" HorizontalAlignment="Center" Margin="0,536,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Admin"/>
     </Grid>
 </Page>
