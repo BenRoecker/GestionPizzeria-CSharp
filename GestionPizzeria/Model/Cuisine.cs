@@ -14,5 +14,18 @@ namespace GestionPizzeria.Model
             this.adresse = adresse;
             this.compteEnBanque = money;
         }
+
+        public void GetMoney(float money)
+        {
+            this.compteEnBanque += money;
+        }
+
+        public void Payement(float money)
+        {
+            if(this.compteEnBanque >= money)
+            {
+                this.compteEnBanque -= money;
+            }
+        }
     }
 }

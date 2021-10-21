@@ -34,5 +34,10 @@ namespace GestionPizzeria.Model
             this.boissons.Add(boisson);
             this.price += boisson.GetPrice();
         }
+
+        public void livré()
+        {
+            this.etape = "livraison";
+        }
     }
 }

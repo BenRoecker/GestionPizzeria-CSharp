@@ -27,5 +27,11 @@ namespace GestionPizzeria.Model
         {
 
         }
+
+        public void reception(Commande commande)
+        {
+            int index = this.commandes.LastIndexOf(commande);
+            this.commandes[index].livré();
+        }
     }
 }
