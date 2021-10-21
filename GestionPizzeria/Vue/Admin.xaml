@@ -1,4 +1,4 @@
-﻿<Page x:Class="GestionPizzeria.Vue.VueClientOver"
+﻿<Page x:Class="GestionPizzeria.Vue.Admin"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:GestionPizzeria.Vue"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="VueClientOver">
+      Title="Admin">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Merci d'avoir commander !" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Text="Vous voice dans le menu Admin, vous pouvez supprimer des clietns, des livreurs ou en ajouter !" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Retour à l'acceuil" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
     </Grid>
 </Page>

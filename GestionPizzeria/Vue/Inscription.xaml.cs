@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace GestionPizzeria.Vue
 {
     /// <summary>
-    /// Logique d'interaction pour VueClientOver.xaml
+    /// Logique d'interaction pour Inscription.xaml
     /// </summary>
-    public partial class VueClientOver : Page
+    public partial class Inscription : Page
     {
-        public VueClientOver()
+        public Inscription()
         {
             InitializeComponent();
         }
