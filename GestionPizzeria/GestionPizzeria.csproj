@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Ressource\" />
   </ItemGroup>
 
 </Project>

@@ -8,11 +8,13 @@ namespace GestionPizzeria.Model
     {
         private int id { get; set; }
         private List<Commande> commandes { get; set; }
+        private float money { get; set; }
 
         public Livreur(int id)
         {
             this.id = id;
             this.commandes = new List<Commande>();
+            this.money = 0.0F;
         }
 
         public void AjoutCommande(Commande commande)
@@ -23,6 +25,19 @@ namespace GestionPizzeria.Model
         public void DeleteCommande(Commande commande)
         {
             this.commandes.Remove(commande);
+        }
+
+        public void GetMoney(float money)
+        {
+            this.money += money;
+        }
+
+        public void PayMoney(float money)
+        {
+            if(this.money >= money)
+            {
+                this.money -= money;
+            }
         }
     }
 }
