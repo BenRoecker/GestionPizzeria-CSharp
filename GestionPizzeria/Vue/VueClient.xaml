@@ -9,65 +9,66 @@
       Title="VueClient">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Procédez à la commande !" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,-175,0,0" Width="100">Normande</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,-125,0,0" Width="100">Chèvre-Miel</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,-75,0,0" Width="100">Chorizo</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,-25,0,0" Width="100">Raclette</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,25,0,0" Width="100">Coca</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,75,0,0" Width="100">Fanta</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,125,0,0" Width="100">Oasis</CheckBox>
-        <CheckBox HorizontalAlignment="Left" Height="25" Margin="0,175,0,0" Width="100">Perrier</CheckBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-175,0,0" Width="100">
+        <TextBlock FontSize="33" HorizontalAlignment="Center" Text="Procédez à la commande !" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-500,0,0" Width="125">Normande</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="33" Margin="0,-400,0,0" Width="125">Chèvre-Miel</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-300,0,0" Width="125">Chorizo</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-200,0,0" Width="125">Raclette</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" Width="125">Coca</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,100,0,0" Width="125">Fanta</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,200,0,0" Width="125">Oasis</CheckBox>
+        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,300,0,0" Width="125">Perrier</CheckBox>
+        <Image Margin="0,300,0,0" HorizontalAlignment="Center" Source="../Ressource/perrier.png" Height="25"/>
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-500,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-125,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-400,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-75,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-300,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-25,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-200,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,25,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,0,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,75,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,100,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,125,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,200,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,175,0,0" Width="100">
+        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,300,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <RadioButton HorizontalAlignment="Center" Margin="0,225,0,0" Height="25">Sur place</RadioButton>
-        <RadioButton HorizontalAlignment="Center" Margin="0,250,0,0" Height="25">A emporter</RadioButton>
-        <Button Content="Valider commande !" HorizontalAlignment="Center" Margin="0,300,0,0" Height="39" Width="150" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Client_Over"/>
+        <RadioButton FontSize="20" HorizontalAlignment="Center" Margin="0,600,0,0" Height="25">Sur place</RadioButton>
+        <RadioButton FontSize="20" HorizontalAlignment="Center" Margin="0,700,0,0" Height="25">A emporter</RadioButton>
+        <Button FontSize="25" Content="Valider commande !" HorizontalAlignment="Center" Margin="0,800,0,0" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Client_Over"/>
     </Grid>
 </Page>

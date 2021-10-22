@@ -26,11 +26,13 @@ namespace GestionPizzeria.Vue
         private void Button_Click_Client(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Uri("Vue/VueClient.xaml", UriKind.Relative));
+            string UserName = username.SelectedText;
         }
 
         private void Button_Click_Livreur(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Uri("Vue/VueLivreur.xaml", UriKind.Relative));
+            string UserName = username.SelectedText;
         }
         private void Button_Click_Inscription(object sender, RoutedEventArgs e)
         {
@@ -39,6 +41,7 @@ namespace GestionPizzeria.Vue
         private void Button_Click_Admin(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Uri("Vue/Admin.xaml", UriKind.Relative));
+            string UserName = username.SelectedText;
         }
     }
 }
