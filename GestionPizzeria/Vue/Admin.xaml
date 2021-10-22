@@ -9,7 +9,7 @@
       Title="Admin">
 
     <Grid>
-        <TextBlock FontSize="30" HorizontalAlignment="Center" Text="Vous voice dans le menu Admin, vous pouvez supprimer des clietns, des livreurs ou en ajouter !" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Center" Text="Vous voici dans le menu Admin, vous pouvez supprimer des clietns, des livreurs ou en ajouter !" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <ComboBox FontSize="25" HorizontalAlignment="Center" Height="25" Margin="0,-500,0,0" Width="125">
             
         </ComboBox>
