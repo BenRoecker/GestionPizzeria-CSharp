@@ -8,6 +8,7 @@ namespace GestionPizzeria.Controller
     class CuisineController
     {
         private Model.Cuisine cuisine;
+        private List<Client> clients;
 
         public CuisineController(Cuisine _cuisine)
         {

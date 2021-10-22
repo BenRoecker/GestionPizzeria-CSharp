@@ -11,6 +11,7 @@ namespace GestionPizzeria.Model
         private int phone { get; set; }
         private DateTime firstCommand { get; set; }
         private Adresse adress { get; set; }
+        private float money { get; set; }
 
         private List<Commande> commandes { get; set; }
 
@@ -32,6 +33,19 @@ namespace GestionPizzeria.Model
         {
             int index = this.commandes.LastIndexOf(commande);
             this.commandes[index].livré();
+        }
+
+        public void ajoutCommande(Commande commande)
+        {
+            this.commandes.Add(commande);
+        }
+
+        public void payment(float money)
+        {
+            if(money <= this.money)
+            {
+                this.money -= money;
+            }
         }
     }
 }
