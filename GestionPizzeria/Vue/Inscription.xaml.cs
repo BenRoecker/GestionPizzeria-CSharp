@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GestionPizzeria.Model;
+using GestionPizzeria.Controller;
 
 namespace GestionPizzeria.Vue
 {
@@ -18,15 +20,25 @@ namespace GestionPizzeria.Vue
     /// </summary>
     public partial class Inscription : Page
     {
+
+  
         public Inscription()
         {
             InitializeComponent();
+
         }
 
         public string PlaceholderText { get; set; }
         private void ComeBack(object sender, RoutedEventArgs e)
         {
+            Client client = new Client(name.Text, surname.Text, phoneNumber.Text);
+            MessageBox.Show("Nom du client crée :"+ client.GetName() + "\nSon prénom :" + client.GetSurname() + "\n" + Application.Current.Properties["Cuisine"].GetType());
+            CuisineController cuisine = (CuisineController) Application.Current.Properties["Cuisine"];
+            cuisine.AddClient(client);
+            Application.Current.Properties["Cuisine"] = cuisine;
             this.NavigationService.Navigate(new Uri("Vue/Start_up.xaml", UriKind.Relative));
+
+            
         }
     }
 }

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using GestionPizzeria.Vue;
+using GestionPizzeria.Controller;
+using GestionPizzeria.Model;
 
 namespace GestionPizzeria
 {

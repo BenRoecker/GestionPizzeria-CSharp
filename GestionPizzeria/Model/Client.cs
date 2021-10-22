@@ -8,20 +8,27 @@ namespace GestionPizzeria.Model
     {
         private string name { get; set; }
         private string surname { get; set; }
-        private int phone { get; set; }
+        private string phone { get; set; }
         private DateTime firstCommand { get; set; }
         private Adresse adress { get; set; }
         private float money { get; set; }
 
         private List<Commande> commandes { get; set; }
 
-        public Client(string name, string surname, int phone, Adresse adress)
+        public Client(string name, string surname, string phone, Adresse adress)
         {
             this.name = name;
             this.surname = surname;
             this.phone = phone;
             this.adress = adress;
             this.commandes = new List<Commande>();
+        }
+
+        public Client(string name, string username, string number)
+        {
+            this.name = name;
+            this.surname = username;
+            this.phone = number;
         }
 
         public void appeler()
@@ -46,6 +53,16 @@ namespace GestionPizzeria.Model
             {
                 this.money -= money;
             }
+        }
+
+        public string GetName()
+        {
+            return name;
+        }
+
+        public string GetSurname()
+        {
+            return surname;
         }
     }
 }

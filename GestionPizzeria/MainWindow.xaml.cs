@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GestionPizzeria.Vue;
+using GestionPizzeria.Controller;
+using GestionPizzeria.Model;
 
 namespace GestionPizzeria
 {
@@ -25,8 +27,8 @@ namespace GestionPizzeria
         {
             InitializeComponent();
             _NavigationFrame.Navigate(new Vue.Start_up());
+            Application.Current.Properties.Add("Cuisine", new CuisineController(new Cuisine(null, 100F)));
+            Application.Current.Properties.Add("Client", new ClientController(new Client(null, null, null)));
         }
-
-        
     }
 }

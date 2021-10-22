@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GestionPizzeria.Controller;
 
 namespace GestionPizzeria.Vue
 {
@@ -25,8 +26,14 @@ namespace GestionPizzeria.Vue
 
         private void Button_Click_Client(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Vue/VueClient.xaml", UriKind.Relative));
-            string UserName = username.SelectedText;
+            string UserName = username.Text;
+            CuisineController cuisine = (CuisineController)Application.Current.Properties["Cuisine"];
+            if (cuisine.existinclient(UserName) != null)
+            {
+                MessageBox.Show("Bcp trop fort mec");
+                Application.Current.Properties["Client"] = cuisine.existinclient(UserName);
+                this.NavigationService.Navigate(new Uri("Vue/VueClient.xaml", UriKind.Relative));
+            }
         }
 
         private void Button_Click_Livreur(object sender, RoutedEventArgs e)
