@@ -9,11 +9,14 @@ namespace GestionPizzeria.Controller
     {
         private Model.Cuisine cuisine;
         private List<Client> clients;
+        private List<Livreur> livreurs;
 
         public CuisineController(Cuisine _cuisine)
         {
             this.cuisine = _cuisine;
             clients = new List<Client>();
+            livreurs = new List<Livreur>();
+            livreurs.Add(new Livreur(0));
         }
 
         public void PayementCommis(Commis commis, float money)
@@ -44,6 +47,18 @@ namespace GestionPizzeria.Controller
                 if(client.GetName() == id)
                 {
                     return client;
+                }
+            }
+            return null;
+        }
+
+        public Livreur existinLivreur(int id)
+        {
+            foreach (Livreur livreur in livreurs)
+            {
+                if (livreur.GetId() == id)
+                {
+                    return livreur;
                 }
             }
             return null;

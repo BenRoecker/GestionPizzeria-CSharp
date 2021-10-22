@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock FontSize="30" HorizontalAlignment="Center" Text="Bonjour voici les commandes en cours, laquelle prenez vous en charge ?" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Center" Height="25" Margin="0,-175,0,0" Width="250">
+        <ComboBox Name ="ListeCommandes" HorizontalAlignment="Center" Height="25" Margin="0,-175,0,0" Width="250" ItemsSource="{Binding MyDataSource}">
             
         </ComboBox>
         <TextBox FontSize="20" HorizontalAlignment="Center" Text="Temps que vous prendrez à livrer (en minutes)" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>

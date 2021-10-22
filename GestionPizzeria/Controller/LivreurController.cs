@@ -26,5 +26,10 @@ namespace GestionPizzeria.Controller
         {
             client.reception(commande);
         }
+
+        public Livreur GetLivreur()
+        {
+            return livreur;
+        }
     }
 }

@@ -41,5 +41,10 @@ namespace GestionPizzeria.Model
                 this.money -= money;
             }
         }
+
+        public int GetId()
+        {
+            return this.id;
+        }
     }
 }
