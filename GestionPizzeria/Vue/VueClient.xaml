@@ -10,58 +10,58 @@
 
     <Grid>
         <TextBlock FontSize="33" HorizontalAlignment="Center" Text="Procédez à la commande !" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-500,0,0" Width="125">Normande</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="33" Margin="0,-400,0,0" Width="125">Chèvre-Miel</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-300,0,0" Width="125">Chorizo</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-200,0,0" Width="125">Raclette</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" Width="125">Coca</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,100,0,0" Width="125">Fanta</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,200,0,0" Width="125">Oasis</CheckBox>
-        <CheckBox FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,300,0,0" Width="125">Perrier</CheckBox>
+        <CheckBox Name="Normande" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-500,0,0" Width="125">Normande</CheckBox>
+        <CheckBox Name="ChevreMiel" FontSize="20" HorizontalAlignment="Left" Height="33" Margin="0,-400,0,0" Width="125">Chèvre-Miel</CheckBox>
+        <CheckBox Name="Chorizo" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-300,0,0" Width="125">Chorizo</CheckBox>
+        <CheckBox Name="Raclette" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,-200,0,0" Width="125">Raclette</CheckBox>
+        <CheckBox Name="Coca" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" Width="125">Coca</CheckBox>
+        <CheckBox Name="Fanta" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,100,0,0" Width="125">Fanta</CheckBox>
+        <CheckBox Name="Oasis" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,200,0,0" Width="125">Oasis</CheckBox>
+        <CheckBox Name="Perrier" FontSize="20" HorizontalAlignment="Left" Height="25" Margin="0,300,0,0" Width="125">Perrier</CheckBox>
         <Image Margin="0,300,0,0" HorizontalAlignment="Center" Source="../Ressource/perrier.png" Height="25"/>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-500,0,0" Width="125">
+        <ComboBox Name ="NormandeNumber" HorizontalAlignment="Right" Height="25" Margin="0,-500,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-400,0,0" Width="125">
+        <ComboBox Name="ChevreMielNumber" HorizontalAlignment="Right" Height="25" Margin="0,-400,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-300,0,0" Width="125">
+        <ComboBox Name="ChorizoNumber" HorizontalAlignment="Right" Height="25" Margin="0,-300,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,-200,0,0" Width="125">
+        <ComboBox Name="RacletteNumber" HorizontalAlignment="Right" Height="25" Margin="0,-200,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,0,0,0" Width="125">
+        <ComboBox Name="CocaNumber" HorizontalAlignment="Right" Height="25" Margin="0,0,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,100,0,0" Width="125">
+        <ComboBox Name="FantaNumber" HorizontalAlignment="Right" Height="25" Margin="0,100,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,200,0,0" Width="125">
+        <ComboBox Name="OasisNumber" HorizontalAlignment="Right" Height="25" Margin="0,200,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Right" Height="25" Margin="0,300,0,0" Width="125">
+        <ComboBox Name="PerrierNumber" HorizontalAlignment="Right" Height="25" Margin="0,300,0,0" Width="125">
             <ComboBoxItem IsSelected="True">0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>

@@ -29,6 +29,7 @@ namespace GestionPizzeria.Model
             this.name = name;
             this.surname = username;
             this.phone = number;
+            this.commandes = new List<Commande>();
         }
 
         public void appeler()
