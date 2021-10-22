@@ -9,7 +9,7 @@
       Title="VueClientOver">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Merci d'avoir commander !" TextWrapping="Wrap" VerticalAlignment="Center"/>
-        <Button Content="Retour à l'acceuil" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
+        <TextBlock FontSize="25" HorizontalAlignment="Center" Text="Merci d'avoir commander !" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <Button FontSize="25" Content="Retour à l'acceuil" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
     </Grid>
 </Page>

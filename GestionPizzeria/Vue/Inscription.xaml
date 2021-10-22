@@ -9,10 +9,10 @@
       Title="Inscription">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Veuillez indiquez vos informations pour pouvoir vous enregistrer dans nos bases de données" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,166,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,222,0,0" Text="Surname" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,278,0,0" Text="Phone number" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Finir inscription" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Center" Text="Veuillez indiquez vos informations pour pouvoir vous enregistrer dans nos bases de données" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox FontSize="25" HorizontalAlignment="Center" Margin="0,166,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox FontSize="25" HorizontalAlignment="Center" Margin="0,222,0,0" Text="Surname" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox FontSize="25" HorizontalAlignment="Center" Margin="0,278,0,0" Text="Phone number" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <Button FontSize="25" Content="Finir inscription" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
     </Grid>
 </Page>

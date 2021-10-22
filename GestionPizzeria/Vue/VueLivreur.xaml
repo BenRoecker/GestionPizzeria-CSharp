@@ -9,11 +9,11 @@
       Title="VueLivreur">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Bonjour voici les commandes en cours, laquelle prenez vous en charge ?" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Center" Height="25" Margin="0,-175,0,0" Width="100">
+        <TextBlock FontSize="30" HorizontalAlignment="Center" Text="Bonjour voici les commandes en cours, laquelle prenez vous en charge ?" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Center" Height="25" Margin="0,-175,0,0" Width="250">
             
         </ComboBox>
-        <TextBox HorizontalAlignment="Center" Text="Temps que vous prendrez à livrer (en minutes)" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
-        <Button Content="Je prends cette commande !" Margin="0,350,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="39" Width="200" RenderTransformOrigin="0.297,0.824" Click="TakeCommande"/>
+        <TextBox FontSize="20" HorizontalAlignment="Center" Text="Temps que vous prendrez à livrer (en minutes)" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
+        <Button FontSize="25" Content="Je prends cette commande !" Margin="0,350,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="39" Width="350" RenderTransformOrigin="0.297,0.824" Click="TakeCommande"/>
     </Grid>
 </Page>

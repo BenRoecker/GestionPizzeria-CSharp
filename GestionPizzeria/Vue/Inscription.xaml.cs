@@ -22,6 +22,8 @@ namespace GestionPizzeria.Vue
         {
             InitializeComponent();
         }
+
+        public string PlaceholderText { get; set; }
         private void ComeBack(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Uri("Vue/Start_up.xaml", UriKind.Relative));

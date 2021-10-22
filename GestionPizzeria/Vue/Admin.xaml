@@ -9,7 +9,10 @@
       Title="Admin">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Text="Vous voice dans le menu Admin, vous pouvez supprimer des clietns, des livreurs ou en ajouter !" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button Content="Retour à l'acceuil" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="94" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Center" Text="Vous voice dans le menu Admin, vous pouvez supprimer des clietns, des livreurs ou en ajouter !" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox FontSize="25" HorizontalAlignment="Center" Height="25" Margin="0,-500,0,0" Width="125">
+            
+        </ComboBox>
+        <Button FontSize="25" Content="Retour à l'acceuil" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="ComeBack"/>
     </Grid>
 </Page>
