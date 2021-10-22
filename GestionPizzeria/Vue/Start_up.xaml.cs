@@ -38,6 +38,14 @@ namespace GestionPizzeria.Vue
 
         private void Button_Click_Livreur(object sender, RoutedEventArgs e)
         {
+            int id = Int32.Parse(username.Text);
+            CuisineController cuisine = (CuisineController)Application.Current.Properties["Cuisine"];
+            if (cuisine.existinLivreur(id) != null)
+            {
+                MessageBox.Show("Bcp trop fort mec");
+                Application.Current.Properties["Client"] = cuisine.existinLivreur(id);
+                this.NavigationService.Navigate(new Uri("Vue/VueClient.xaml", UriKind.Relative));
+            }
             this.NavigationService.Navigate(new Uri("Vue/VueLivreur.xaml", UriKind.Relative));
             string UserName = username.SelectedText;
         }

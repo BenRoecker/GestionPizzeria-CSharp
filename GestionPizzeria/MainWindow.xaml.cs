@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using GestionPizzeria.Vue;
 using GestionPizzeria.Controller;
 using GestionPizzeria.Model;
+using System.Globalization;
 
 namespace GestionPizzeria
 {
@@ -29,6 +30,10 @@ namespace GestionPizzeria
             _NavigationFrame.Navigate(new Vue.Start_up());
             Application.Current.Properties.Add("Cuisine", new CuisineController(new Cuisine(null, 100F)));
             Application.Current.Properties.Add("Client", new ClientController(new Client(null, null, null)));
+            List<Commande> commandes = new List<Commande>();
+            commandes.Add(new Commande(0, DateTime.Now));
+            Application.Current.Properties.Add("Commande", commandes);
+            Application.Current.Properties.Add("Livreur", new LivreurController(new Livreur(0)));
         }
     }
 }

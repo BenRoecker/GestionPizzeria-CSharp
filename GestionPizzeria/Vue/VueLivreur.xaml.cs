@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GestionPizzeria.Model;
+using GestionPizzeria.Controller;
 
 namespace GestionPizzeria.Vue
 {
@@ -21,9 +23,24 @@ namespace GestionPizzeria.Vue
         public VueLivreur()
         {
             InitializeComponent();
+            List<Commande> Test = (List<Commande>)Application.Current.Properties["Commande"];
+            foreach(Commande commande in Test)
+            {
+                if(commande.GetEtape() == "init")
+                {
+                    ListeCommandes.Items.Add(commande.ToString());
+                } 
+            }
         }
         private void TakeCommande(object sender, RoutedEventArgs e)
         {
+            List<Commande> Test = (List<Commande>)Application.Current.Properties["Commande"];
+            int id = ListeCommandes.SelectedIndex;
+            LivreurController livreur = (LivreurController) Application.Current.Properties["Livreur"];
+            livreur.GetLivreur().AjoutCommande(Test[id]);
+            Test[id].livré();
+            Application.Current.Properties["Commande"] = Test;
+
             this.NavigationService.Navigate(new Uri("Vue/Start_up.xaml", UriKind.Relative));
             MessageBox.Show("La commande que vous avez choisi vous est bien attribué");
         }

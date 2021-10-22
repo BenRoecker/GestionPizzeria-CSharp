@@ -12,6 +12,7 @@ namespace GestionPizzeria.Model
         private string etape;
         private List<Pizza> pizzas;
         private List<Boisson> boissons;
+        private Client client;
 
         public Commande(int id, DateTime date)
         {
@@ -42,7 +43,17 @@ namespace GestionPizzeria.Model
 
         public void livré()
         {
-            this.etape = "livré";
+            this.etape = "En livraison";
+        }
+
+        public string GetEtape()
+        {
+            return this.etape;
+        }
+
+        public override string ToString()
+        {
+            return "Id: " + this.id + " date :" + this.date;
         }
     }
 }
