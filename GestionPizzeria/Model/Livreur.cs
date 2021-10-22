@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace GestionPizzeria.Model
 {
@@ -36,6 +37,7 @@ namespace GestionPizzeria.Model
         {
             if(this.money >= money)
             {
+                Thread.Sleep(2000);
                 this.money -= money;
             }
         }

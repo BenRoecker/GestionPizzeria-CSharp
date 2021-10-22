@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using GestionPizzeria.Model;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace GestionPizzeria.Controller
 {
@@ -14,9 +16,9 @@ namespace GestionPizzeria.Controller
             this.livreur = _livreur;
         }
 
-        public void EnvoiePayementToCuisine(Cuisine cuisine, float money)
+        public async void EnvoiePayementToCuisine(Cuisine cuisine, float money)
         {
-            livreur.PayMoney(money);
+            await Task.Run(() => livreur.PayMoney(money));
             cuisine.GetMoney(money);
         }
 

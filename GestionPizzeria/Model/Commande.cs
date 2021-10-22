@@ -42,7 +42,7 @@ namespace GestionPizzeria.Model
 
         public void livré()
         {
-            this.etape = "livraison";
+            this.etape = "livré";
         }
     }
 }
