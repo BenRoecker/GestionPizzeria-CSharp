@@ -53,10 +53,5 @@ namespace GestionPizzeria.Vue
         {
             this.NavigationService.Navigate(new Uri("Vue/Inscription.xaml", UriKind.Relative));
         }
-        private void Button_Click_Admin(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("Vue/Admin.xaml", UriKind.Relative));
-            string UserName = username.SelectedText;
-        }
     }
 }

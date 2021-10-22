@@ -14,6 +14,5 @@
         <Button FontSize="25" Content="Page Client" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Client"/>
         <Button FontSize="25" Content="Page Livreur" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Livreur"/>
         <Button FontSize="25" Content="Inscription Client" HorizontalAlignment="Center" Margin="0,460,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Inscription"/>
-        <Button FontSize="25" Content="Admin" HorizontalAlignment="Center" Margin="0,536,0,0" VerticalAlignment="Top" Height="39" Width="250" RenderTransformOrigin="0.297,0.824" Click="Button_Click_Admin"/>
     </Grid>
 </Page>

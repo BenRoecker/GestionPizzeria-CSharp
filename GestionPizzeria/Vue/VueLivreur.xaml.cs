@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GestionPizzeria.Model;
+using System.Threading.Tasks;
 using GestionPizzeria.Controller;
 
 namespace GestionPizzeria.Vue
@@ -34,6 +35,8 @@ namespace GestionPizzeria.Vue
         }
         private void TakeCommande(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("La commande que vous avez choisi est en cours de préparation");
+            Task.Delay(5000).Wait();
             List<Commande> Test = (List<Commande>)Application.Current.Properties["Commande"];
             int id = ListeCommandes.SelectedIndex;
             LivreurController livreur = (LivreurController) Application.Current.Properties["Livreur"];
