@@ -17,10 +17,12 @@ namespace GestionPizzeria.Controller
         public void PayementCommis(Commis commis, float money)
         {
             commis.GetMoney(money);
+            this.cuisine.Payement(money);
         }
         public void PayementLivreur(Livreur livreur, float money)
         {
             livreur.GetMoney(money);
+            this.cuisine.Payement(money);
         }
     }
 }

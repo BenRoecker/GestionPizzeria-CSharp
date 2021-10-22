@@ -17,6 +17,7 @@ namespace GestionPizzeria.Controller
         public void EnvoiePayementToCuisine(Cuisine cuisine, float money)
         {
             livreur.PayMoney(money);
+            cuisine.GetMoney(money);
         }
 
         public void Livraison(Client client, Commande commande)
