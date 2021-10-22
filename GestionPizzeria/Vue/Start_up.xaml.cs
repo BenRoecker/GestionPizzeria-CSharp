@@ -30,7 +30,7 @@ namespace GestionPizzeria.Vue
             CuisineController cuisine = (CuisineController)Application.Current.Properties["Cuisine"];
             if (cuisine.existinclient(UserName) != null)
             {
-                MessageBox.Show("Bcp trop fort mec");
+                MessageBox.Show("Connexion réussi");
                 Application.Current.Properties["Client"] = cuisine.existinclient(UserName);
                 this.NavigationService.Navigate(new Uri("Vue/VueClient.xaml", UriKind.Relative));
             }
@@ -42,7 +42,7 @@ namespace GestionPizzeria.Vue
             CuisineController cuisine = (CuisineController)Application.Current.Properties["Cuisine"];
             if (cuisine.existinLivreur(id) != null)
             {
-                MessageBox.Show("Bcp trop fort mec");
+                MessageBox.Show("Connexion réussi");
                 Application.Current.Properties["Client"] = cuisine.existinLivreur(id);
                 this.NavigationService.Navigate(new Uri("Vue/VueClient.xaml", UriKind.Relative));
             }
